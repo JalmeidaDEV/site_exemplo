@@ -1,0 +1,1392 @@
+08/04/2021 10:25:23  INFO ############### Início da Aplicação ###############
+08/04/2021 10:25:23  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+08/04/2021 10:25:24  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+08/04/2021 10:25:24  INFO SwixML @version@
+08/04/2021 13:25:29  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+08/04/2021 13:25:30  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+08/04/2021 13:25:30  INFO --port=3338 
+08/04/2021 13:25:30  INFO --net_write_timeout=604800 
+08/04/2021 13:25:30  INFO --myisam_sort_buffer_size=64M 
+08/04/2021 13:25:30  INFO --lower_case_table_names=1 
+08/04/2021 13:25:30  INFO --tmp_table_size=200M 
+08/04/2021 13:25:30  INFO --language=./mysql/share/english 
+08/04/2021 13:25:30  INFO --myisam_max_sort_file_size=100G 
+08/04/2021 13:25:30  INFO --wait_timeout=604800 
+08/04/2021 13:25:30  INFO --innodb_lock_wait_timeout=50 
+08/04/2021 13:25:30  INFO --net_read_timeout=600 
+08/04/2021 13:25:30  INFO --enable-named-pipe 
+08/04/2021 13:25:30  INFO --innodb_log_file_size=5M 
+08/04/2021 13:25:30  INFO --sort_buffer_size=10M 
+08/04/2021 13:25:30  INFO --bind-address=127.0.0.1 
+08/04/2021 13:25:30  INFO --innodb_thread_concurrency=4 
+08/04/2021 13:25:30  INFO --query_cache_size=1M 
+08/04/2021 13:25:30  INFO --default-storage-engine=MyISAM 
+08/04/2021 13:25:30  INFO --max_connections=70 
+08/04/2021 13:25:30  INFO --innodb_flush_log_at_trx_commit=0 
+08/04/2021 13:25:30  INFO --innodb_log_buffer_size=1M 
+08/04/2021 13:25:30  INFO --innodb_additional_mem_pool_size=2M 
+08/04/2021 13:25:30  INFO --max_allowed_packet=16M 
+08/04/2021 13:25:30  INFO --read_buffer_size=1M 
+08/04/2021 13:25:30  INFO --datadir=./mysql/data 
+08/04/2021 13:25:30  INFO --innodb_buffer_pool_size=64M 
+08/04/2021 13:25:30  INFO --thread_cache_size=5 
+08/04/2021 13:25:30  INFO --default-character-set=latin1 
+08/04/2021 13:25:30  INFO --table_cache=256 
+08/04/2021 13:25:30  INFO --skip-name-resolve 
+08/04/2021 13:25:30  INFO --max_heap_table_size=150MB 
+08/04/2021 13:25:30  INFO --basedir=./mysql 
+08/04/2021 13:25:30  INFO --default-collation=latin1_general_ci 
+08/04/2021 13:25:30  INFO --tmpdir=./mysql/ 
+08/04/2021 13:25:30  INFO --read_rnd_buffer_size=500K 
+08/04/2021 13:25:30  INFO --myisam_max_extra_sort_file_size=100G 
+08/04/2021 13:25:30  INFO --key_buffer_size=100M 
+08/04/2021 13:25:30  INFO --socket=SPEDPisCofins3338 
+08/04/2021 13:25:30  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+08/04/2021 13:25:30  INFO --innodb_file_per_table=1 
+08/04/2021 13:25:30  INFO --innodb_flush_method=normal 
+08/04/2021 13:25:30  INFO 
+
+08/04/2021 13:25:35  INFO ===============================================================
+08/04/2021 13:25:35  INFO Módulo: MODULO_GERAL_PVA
+08/04/2021 13:25:35  INFO Serviço: Serviço de exclusão da escrituração
+08/04/2021 13:25:35  INFO Serviço: Serviço de validação de escrituração
+08/04/2021 13:25:35  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+08/04/2021 13:25:35  INFO Serviço: Serviço de importação de escrituração
+08/04/2021 13:25:35  INFO Serviço: Serviço de exportação de escrituração
+08/04/2021 13:25:35  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+08/04/2021 13:25:35  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+08/04/2021 13:25:35  INFO Serviço: Controle de Geração de Relatórios
+08/04/2021 13:25:35  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+08/04/2021 13:25:35  INFO Serviço: Serviço de cópia de segurança de escrituração
+08/04/2021 13:25:35  INFO Serviço: Serviço de assinatura da escrituração
+08/04/2021 13:25:35  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+08/04/2021 13:25:35  INFO ===============================================================
+08/04/2021 13:25:35  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+08/04/2021 13:25:35  INFO Serviço: Controle de abertura da Escrituração
+08/04/2021 13:25:35  INFO Serviço: Controle de Edição da Escrituração
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+08/04/2021 13:25:35  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+08/04/2021 13:25:36  INFO Carregando tabelas...
+12/04/2021 08:05:13  INFO ############### Início da Aplicação ###############
+12/04/2021 08:05:13  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+12/04/2021 08:05:18  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+12/04/2021 08:05:18  INFO SwixML @version@
+12/04/2021 11:05:23  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+12/04/2021 11:05:24  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+12/04/2021 11:05:24  INFO --port=3338 
+12/04/2021 11:05:24  INFO --net_write_timeout=604800 
+12/04/2021 11:05:24  INFO --myisam_sort_buffer_size=64M 
+12/04/2021 11:05:24  INFO --lower_case_table_names=1 
+12/04/2021 11:05:24  INFO --tmp_table_size=200M 
+12/04/2021 11:05:24  INFO --language=./mysql/share/english 
+12/04/2021 11:05:24  INFO --myisam_max_sort_file_size=100G 
+12/04/2021 11:05:24  INFO --wait_timeout=604800 
+12/04/2021 11:05:24  INFO --innodb_lock_wait_timeout=50 
+12/04/2021 11:05:24  INFO --net_read_timeout=600 
+12/04/2021 11:05:24  INFO --enable-named-pipe 
+12/04/2021 11:05:24  INFO --innodb_log_file_size=5M 
+12/04/2021 11:05:24  INFO --sort_buffer_size=10M 
+12/04/2021 11:05:24  INFO --bind-address=127.0.0.1 
+12/04/2021 11:05:24  INFO --innodb_thread_concurrency=4 
+12/04/2021 11:05:24  INFO --query_cache_size=1M 
+12/04/2021 11:05:24  INFO --default-storage-engine=MyISAM 
+12/04/2021 11:05:24  INFO --max_connections=70 
+12/04/2021 11:05:24  INFO --innodb_flush_log_at_trx_commit=0 
+12/04/2021 11:05:24  INFO --innodb_log_buffer_size=1M 
+12/04/2021 11:05:24  INFO --innodb_additional_mem_pool_size=2M 
+12/04/2021 11:05:24  INFO --max_allowed_packet=16M 
+12/04/2021 11:05:24  INFO --read_buffer_size=1M 
+12/04/2021 11:05:24  INFO --datadir=./mysql/data 
+12/04/2021 11:05:24  INFO --innodb_buffer_pool_size=64M 
+12/04/2021 11:05:24  INFO --thread_cache_size=5 
+12/04/2021 11:05:24  INFO --default-character-set=latin1 
+12/04/2021 11:05:24  INFO --table_cache=256 
+12/04/2021 11:05:24  INFO --skip-name-resolve 
+12/04/2021 11:05:24  INFO --max_heap_table_size=150MB 
+12/04/2021 11:05:24  INFO --basedir=./mysql 
+12/04/2021 11:05:24  INFO --default-collation=latin1_general_ci 
+12/04/2021 11:05:24  INFO --tmpdir=./mysql/ 
+12/04/2021 11:05:24  INFO --read_rnd_buffer_size=500K 
+12/04/2021 11:05:24  INFO --myisam_max_extra_sort_file_size=100G 
+12/04/2021 11:05:24  INFO --key_buffer_size=100M 
+12/04/2021 11:05:24  INFO --socket=SPEDPisCofins3338 
+12/04/2021 11:05:24  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+12/04/2021 11:05:24  INFO --innodb_file_per_table=1 
+12/04/2021 11:05:24  INFO --innodb_flush_method=normal 
+12/04/2021 11:05:24  INFO 
+
+12/04/2021 11:05:36  INFO ===============================================================
+12/04/2021 11:05:36  INFO Módulo: MODULO_GERAL_PVA
+12/04/2021 11:05:36  INFO Serviço: Serviço de exportação de escrituração
+12/04/2021 11:05:36  INFO Serviço: Serviço de cópia de segurança de escrituração
+12/04/2021 11:05:36  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+12/04/2021 11:05:36  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+12/04/2021 11:05:36  INFO Serviço: Serviço de assinatura da escrituração
+12/04/2021 11:05:36  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+12/04/2021 11:05:36  INFO Serviço: Serviço de validação de escrituração
+12/04/2021 11:05:36  INFO Serviço: Serviço de importação de escrituração
+12/04/2021 11:05:36  INFO Serviço: Controle de Geração de Relatórios
+12/04/2021 11:05:36  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+12/04/2021 11:05:36  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+12/04/2021 11:05:36  INFO Serviço: Serviço de exclusão da escrituração
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO ===============================================================
+12/04/2021 11:05:36  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+12/04/2021 11:05:36  INFO Serviço: Controle de abertura da Escrituração
+12/04/2021 11:05:36  INFO Serviço: Controle de Edição da Escrituração
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+12/04/2021 11:05:36  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+12/04/2021 11:05:39  INFO Carregando tabelas...
+13/04/2021 10:05:49  INFO ############### Início da Aplicação ###############
+13/04/2021 10:05:49  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+13/04/2021 10:05:50  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+13/04/2021 10:05:50  INFO SwixML @version@
+13/04/2021 13:05:54  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+13/04/2021 13:05:55  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+13/04/2021 13:05:55  INFO --port=3338 
+13/04/2021 13:05:55  INFO --net_write_timeout=604800 
+13/04/2021 13:05:55  INFO --myisam_sort_buffer_size=64M 
+13/04/2021 13:05:55  INFO --lower_case_table_names=1 
+13/04/2021 13:05:55  INFO --tmp_table_size=200M 
+13/04/2021 13:05:55  INFO --language=./mysql/share/english 
+13/04/2021 13:05:55  INFO --myisam_max_sort_file_size=100G 
+13/04/2021 13:05:55  INFO --wait_timeout=604800 
+13/04/2021 13:05:55  INFO --innodb_lock_wait_timeout=50 
+13/04/2021 13:05:55  INFO --net_read_timeout=600 
+13/04/2021 13:05:55  INFO --enable-named-pipe 
+13/04/2021 13:05:55  INFO --innodb_log_file_size=5M 
+13/04/2021 13:05:55  INFO --sort_buffer_size=10M 
+13/04/2021 13:05:55  INFO --bind-address=127.0.0.1 
+13/04/2021 13:05:55  INFO --innodb_thread_concurrency=4 
+13/04/2021 13:05:55  INFO --query_cache_size=1M 
+13/04/2021 13:05:55  INFO --default-storage-engine=MyISAM 
+13/04/2021 13:05:55  INFO --max_connections=70 
+13/04/2021 13:05:55  INFO --innodb_flush_log_at_trx_commit=0 
+13/04/2021 13:05:55  INFO --innodb_log_buffer_size=1M 
+13/04/2021 13:05:55  INFO --innodb_additional_mem_pool_size=2M 
+13/04/2021 13:05:55  INFO --max_allowed_packet=16M 
+13/04/2021 13:05:55  INFO --read_buffer_size=1M 
+13/04/2021 13:05:55  INFO --datadir=./mysql/data 
+13/04/2021 13:05:55  INFO --innodb_buffer_pool_size=64M 
+13/04/2021 13:05:55  INFO --thread_cache_size=5 
+13/04/2021 13:05:55  INFO --default-character-set=latin1 
+13/04/2021 13:05:55  INFO --table_cache=256 
+13/04/2021 13:05:55  INFO --skip-name-resolve 
+13/04/2021 13:05:55  INFO --max_heap_table_size=150MB 
+13/04/2021 13:05:55  INFO --basedir=./mysql 
+13/04/2021 13:05:55  INFO --default-collation=latin1_general_ci 
+13/04/2021 13:05:55  INFO --tmpdir=./mysql/ 
+13/04/2021 13:05:55  INFO --read_rnd_buffer_size=500K 
+13/04/2021 13:05:55  INFO --myisam_max_extra_sort_file_size=100G 
+13/04/2021 13:05:55  INFO --key_buffer_size=100M 
+13/04/2021 13:05:55  INFO --socket=SPEDPisCofins3338 
+13/04/2021 13:05:55  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+13/04/2021 13:05:55  INFO --innodb_file_per_table=1 
+13/04/2021 13:05:55  INFO --innodb_flush_method=normal 
+13/04/2021 13:05:55  INFO 
+
+13/04/2021 13:06:07  INFO ===============================================================
+13/04/2021 13:06:07  INFO Módulo: MODULO_GERAL_PVA
+13/04/2021 13:06:07  INFO Serviço: Serviço de cópia de segurança de escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+13/04/2021 13:06:07  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de validação de escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de exportação de escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de importação de escrituração
+13/04/2021 13:06:07  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+13/04/2021 13:06:07  INFO Serviço: Controle de Geração de Relatórios
+13/04/2021 13:06:07  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de exclusão da escrituração
+13/04/2021 13:06:07  INFO Serviço: Serviço de assinatura da escrituração
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO ===============================================================
+13/04/2021 13:06:07  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+13/04/2021 13:06:07  INFO Serviço: Controle de abertura da Escrituração
+13/04/2021 13:06:07  INFO Serviço: Controle de Edição da Escrituração
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+13/04/2021 13:06:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+13/04/2021 13:06:09  INFO Carregando tabelas...
+16/04/2021 17:38:08  INFO ############### Início da Aplicação ###############
+16/04/2021 17:38:08  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+16/04/2021 17:38:11  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+16/04/2021 17:38:11  INFO SwixML @version@
+16/04/2021 20:38:15  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+16/04/2021 20:38:17  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+16/04/2021 20:38:17  INFO --port=3338 
+16/04/2021 20:38:17  INFO --net_write_timeout=604800 
+16/04/2021 20:38:17  INFO --myisam_sort_buffer_size=64M 
+16/04/2021 20:38:17  INFO --lower_case_table_names=1 
+16/04/2021 20:38:17  INFO --tmp_table_size=200M 
+16/04/2021 20:38:17  INFO --language=./mysql/share/english 
+16/04/2021 20:38:17  INFO --myisam_max_sort_file_size=100G 
+16/04/2021 20:38:17  INFO --wait_timeout=604800 
+16/04/2021 20:38:17  INFO --innodb_lock_wait_timeout=50 
+16/04/2021 20:38:17  INFO --net_read_timeout=600 
+16/04/2021 20:38:17  INFO --enable-named-pipe 
+16/04/2021 20:38:17  INFO --innodb_log_file_size=5M 
+16/04/2021 20:38:17  INFO --sort_buffer_size=10M 
+16/04/2021 20:38:17  INFO --bind-address=127.0.0.1 
+16/04/2021 20:38:17  INFO --innodb_thread_concurrency=4 
+16/04/2021 20:38:17  INFO --query_cache_size=1M 
+16/04/2021 20:38:17  INFO --default-storage-engine=MyISAM 
+16/04/2021 20:38:17  INFO --max_connections=70 
+16/04/2021 20:38:17  INFO --innodb_flush_log_at_trx_commit=0 
+16/04/2021 20:38:17  INFO --innodb_log_buffer_size=1M 
+16/04/2021 20:38:17  INFO --innodb_additional_mem_pool_size=2M 
+16/04/2021 20:38:17  INFO --max_allowed_packet=16M 
+16/04/2021 20:38:17  INFO --read_buffer_size=1M 
+16/04/2021 20:38:17  INFO --datadir=./mysql/data 
+16/04/2021 20:38:17  INFO --innodb_buffer_pool_size=64M 
+16/04/2021 20:38:17  INFO --thread_cache_size=5 
+16/04/2021 20:38:17  INFO --default-character-set=latin1 
+16/04/2021 20:38:17  INFO --table_cache=256 
+16/04/2021 20:38:17  INFO --skip-name-resolve 
+16/04/2021 20:38:17  INFO --max_heap_table_size=150MB 
+16/04/2021 20:38:17  INFO --basedir=./mysql 
+16/04/2021 20:38:17  INFO --default-collation=latin1_general_ci 
+16/04/2021 20:38:17  INFO --tmpdir=./mysql/ 
+16/04/2021 20:38:17  INFO --read_rnd_buffer_size=500K 
+16/04/2021 20:38:17  INFO --myisam_max_extra_sort_file_size=100G 
+16/04/2021 20:38:17  INFO --key_buffer_size=100M 
+16/04/2021 20:38:17  INFO --socket=SPEDPisCofins3338 
+16/04/2021 20:38:17  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+16/04/2021 20:38:17  INFO --innodb_file_per_table=1 
+16/04/2021 20:38:17  INFO --innodb_flush_method=normal 
+16/04/2021 20:38:17  INFO 
+
+16/04/2021 20:38:28  INFO ===============================================================
+16/04/2021 20:38:28  INFO Módulo: MODULO_GERAL_PVA
+16/04/2021 20:38:28  INFO Serviço: Serviço de exclusão da escrituração
+16/04/2021 20:38:28  INFO Serviço: Serviço de validação de escrituração
+16/04/2021 20:38:28  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+16/04/2021 20:38:28  INFO Serviço: Serviço de importação de escrituração
+16/04/2021 20:38:28  INFO Serviço: Serviço de exportação de escrituração
+16/04/2021 20:38:28  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+16/04/2021 20:38:28  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+16/04/2021 20:38:28  INFO Serviço: Controle de Geração de Relatórios
+16/04/2021 20:38:28  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+16/04/2021 20:38:28  INFO Serviço: Serviço de cópia de segurança de escrituração
+16/04/2021 20:38:28  INFO Serviço: Serviço de assinatura da escrituração
+16/04/2021 20:38:28  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+16/04/2021 20:38:28  INFO ===============================================================
+16/04/2021 20:38:28  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+16/04/2021 20:38:28  INFO Serviço: Controle de abertura da Escrituração
+16/04/2021 20:38:28  INFO Serviço: Controle de Edição da Escrituração
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+16/04/2021 20:38:28  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+16/04/2021 20:38:29  INFO Carregando tabelas...
+19/04/2021 11:29:32  INFO ############### Início da Aplicação ###############
+19/04/2021 11:29:32  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+19/04/2021 11:29:34  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+19/04/2021 11:29:34  INFO SwixML @version@
+19/04/2021 14:29:38  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+19/04/2021 14:29:39  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+19/04/2021 14:29:39  INFO --port=3338 
+19/04/2021 14:29:39  INFO --net_write_timeout=604800 
+19/04/2021 14:29:39  INFO --myisam_sort_buffer_size=64M 
+19/04/2021 14:29:39  INFO --lower_case_table_names=1 
+19/04/2021 14:29:39  INFO --tmp_table_size=200M 
+19/04/2021 14:29:39  INFO --language=./mysql/share/english 
+19/04/2021 14:29:39  INFO --myisam_max_sort_file_size=100G 
+19/04/2021 14:29:39  INFO --wait_timeout=604800 
+19/04/2021 14:29:39  INFO --innodb_lock_wait_timeout=50 
+19/04/2021 14:29:39  INFO --net_read_timeout=600 
+19/04/2021 14:29:39  INFO --enable-named-pipe 
+19/04/2021 14:29:39  INFO --innodb_log_file_size=5M 
+19/04/2021 14:29:39  INFO --sort_buffer_size=10M 
+19/04/2021 14:29:39  INFO --bind-address=127.0.0.1 
+19/04/2021 14:29:39  INFO --innodb_thread_concurrency=4 
+19/04/2021 14:29:39  INFO --query_cache_size=1M 
+19/04/2021 14:29:39  INFO --default-storage-engine=MyISAM 
+19/04/2021 14:29:39  INFO --max_connections=70 
+19/04/2021 14:29:39  INFO --innodb_flush_log_at_trx_commit=0 
+19/04/2021 14:29:39  INFO --innodb_log_buffer_size=1M 
+19/04/2021 14:29:39  INFO --innodb_additional_mem_pool_size=2M 
+19/04/2021 14:29:39  INFO --max_allowed_packet=16M 
+19/04/2021 14:29:39  INFO --read_buffer_size=1M 
+19/04/2021 14:29:39  INFO --datadir=./mysql/data 
+19/04/2021 14:29:39  INFO --innodb_buffer_pool_size=64M 
+19/04/2021 14:29:39  INFO --thread_cache_size=5 
+19/04/2021 14:29:39  INFO --default-character-set=latin1 
+19/04/2021 14:29:39  INFO --table_cache=256 
+19/04/2021 14:29:39  INFO --skip-name-resolve 
+19/04/2021 14:29:39  INFO --max_heap_table_size=150MB 
+19/04/2021 14:29:39  INFO --basedir=./mysql 
+19/04/2021 14:29:39  INFO --default-collation=latin1_general_ci 
+19/04/2021 14:29:39  INFO --tmpdir=./mysql/ 
+19/04/2021 14:29:39  INFO --read_rnd_buffer_size=500K 
+19/04/2021 14:29:39  INFO --myisam_max_extra_sort_file_size=100G 
+19/04/2021 14:29:39  INFO --key_buffer_size=100M 
+19/04/2021 14:29:39  INFO --socket=SPEDPisCofins3338 
+19/04/2021 14:29:39  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+19/04/2021 14:29:39  INFO --innodb_file_per_table=1 
+19/04/2021 14:29:39  INFO --innodb_flush_method=normal 
+19/04/2021 14:29:39  INFO 
+
+19/04/2021 14:29:51  INFO ===============================================================
+19/04/2021 14:29:51  INFO Módulo: MODULO_GERAL_PVA
+19/04/2021 14:29:51  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+19/04/2021 14:29:51  INFO Serviço: Serviço de cópia de segurança de escrituração
+19/04/2021 14:29:51  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+19/04/2021 14:29:51  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+19/04/2021 14:29:51  INFO Serviço: Serviço de exclusão da escrituração
+19/04/2021 14:29:51  INFO Serviço: Controle de Geração de Relatórios
+19/04/2021 14:29:51  INFO Serviço: Serviço de assinatura da escrituração
+19/04/2021 14:29:51  INFO Serviço: Serviço de importação de escrituração
+19/04/2021 14:29:51  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+19/04/2021 14:29:51  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+19/04/2021 14:29:51  INFO Serviço: Serviço de validação de escrituração
+19/04/2021 14:29:51  INFO Serviço: Serviço de exportação de escrituração
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO ===============================================================
+19/04/2021 14:29:51  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+19/04/2021 14:29:51  INFO Serviço: Controle de abertura da Escrituração
+19/04/2021 14:29:51  INFO Serviço: Controle de Edição da Escrituração
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+19/04/2021 14:29:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+19/04/2021 14:29:53  INFO Carregando tabelas...
+19/04/2021 13:02:16  INFO ############### Início da Aplicação ###############
+19/04/2021 13:02:16  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+19/04/2021 13:02:17  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+19/04/2021 13:02:17  INFO SwixML @version@
+19/04/2021 16:02:22  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+19/04/2021 16:02:23  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+19/04/2021 16:02:23  INFO --port=3338 
+19/04/2021 16:02:23  INFO --net_write_timeout=604800 
+19/04/2021 16:02:23  INFO --myisam_sort_buffer_size=64M 
+19/04/2021 16:02:23  INFO --lower_case_table_names=1 
+19/04/2021 16:02:23  INFO --tmp_table_size=200M 
+19/04/2021 16:02:23  INFO --language=./mysql/share/english 
+19/04/2021 16:02:23  INFO --myisam_max_sort_file_size=100G 
+19/04/2021 16:02:23  INFO --wait_timeout=604800 
+19/04/2021 16:02:23  INFO --innodb_lock_wait_timeout=50 
+19/04/2021 16:02:23  INFO --net_read_timeout=600 
+19/04/2021 16:02:23  INFO --enable-named-pipe 
+19/04/2021 16:02:23  INFO --innodb_log_file_size=5M 
+19/04/2021 16:02:23  INFO --sort_buffer_size=10M 
+19/04/2021 16:02:23  INFO --bind-address=127.0.0.1 
+19/04/2021 16:02:23  INFO --innodb_thread_concurrency=4 
+19/04/2021 16:02:23  INFO --query_cache_size=1M 
+19/04/2021 16:02:23  INFO --default-storage-engine=MyISAM 
+19/04/2021 16:02:23  INFO --max_connections=70 
+19/04/2021 16:02:23  INFO --innodb_flush_log_at_trx_commit=0 
+19/04/2021 16:02:23  INFO --innodb_log_buffer_size=1M 
+19/04/2021 16:02:23  INFO --innodb_additional_mem_pool_size=2M 
+19/04/2021 16:02:23  INFO --max_allowed_packet=16M 
+19/04/2021 16:02:23  INFO --read_buffer_size=1M 
+19/04/2021 16:02:23  INFO --datadir=./mysql/data 
+19/04/2021 16:02:23  INFO --innodb_buffer_pool_size=64M 
+19/04/2021 16:02:23  INFO --thread_cache_size=5 
+19/04/2021 16:02:23  INFO --default-character-set=latin1 
+19/04/2021 16:02:23  INFO --table_cache=256 
+19/04/2021 16:02:23  INFO --skip-name-resolve 
+19/04/2021 16:02:23  INFO --max_heap_table_size=150MB 
+19/04/2021 16:02:23  INFO --basedir=./mysql 
+19/04/2021 16:02:23  INFO --default-collation=latin1_general_ci 
+19/04/2021 16:02:23  INFO --tmpdir=./mysql/ 
+19/04/2021 16:02:23  INFO --read_rnd_buffer_size=500K 
+19/04/2021 16:02:23  INFO --myisam_max_extra_sort_file_size=100G 
+19/04/2021 16:02:23  INFO --key_buffer_size=100M 
+19/04/2021 16:02:23  INFO --socket=SPEDPisCofins3338 
+19/04/2021 16:02:23  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+19/04/2021 16:02:23  INFO --innodb_file_per_table=1 
+19/04/2021 16:02:23  INFO --innodb_flush_method=normal 
+19/04/2021 16:02:23  INFO 
+
+19/04/2021 16:02:27  INFO ===============================================================
+19/04/2021 16:02:27  INFO Módulo: MODULO_GERAL_PVA
+19/04/2021 16:02:27  INFO Serviço: Serviço de validação de escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+19/04/2021 16:02:27  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de importação de escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de exportação de escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+19/04/2021 16:02:27  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+19/04/2021 16:02:27  INFO Serviço: Controle de Geração de Relatórios
+19/04/2021 16:02:27  INFO Serviço: Serviço de cópia de segurança de escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de assinatura da escrituração
+19/04/2021 16:02:27  INFO Serviço: Serviço de exclusão da escrituração
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO ===============================================================
+19/04/2021 16:02:27  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+19/04/2021 16:02:27  INFO Serviço: Controle de abertura da Escrituração
+19/04/2021 16:02:27  INFO Serviço: Controle de Edição da Escrituração
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+19/04/2021 16:02:27  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+19/04/2021 16:02:28  INFO Carregando tabelas...
+20/04/2021 12:01:30  INFO ############### Início da Aplicação ###############
+20/04/2021 12:01:30  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+20/04/2021 12:01:34  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+20/04/2021 12:01:34  INFO SwixML @version@
+20/04/2021 15:01:39  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+20/04/2021 15:01:40  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+20/04/2021 15:01:40  INFO --port=3338 
+20/04/2021 15:01:40  INFO --net_write_timeout=604800 
+20/04/2021 15:01:40  INFO --myisam_sort_buffer_size=64M 
+20/04/2021 15:01:40  INFO --lower_case_table_names=1 
+20/04/2021 15:01:40  INFO --tmp_table_size=200M 
+20/04/2021 15:01:40  INFO --language=./mysql/share/english 
+20/04/2021 15:01:40  INFO --myisam_max_sort_file_size=100G 
+20/04/2021 15:01:40  INFO --wait_timeout=604800 
+20/04/2021 15:01:40  INFO --innodb_lock_wait_timeout=50 
+20/04/2021 15:01:40  INFO --net_read_timeout=600 
+20/04/2021 15:01:40  INFO --enable-named-pipe 
+20/04/2021 15:01:40  INFO --innodb_log_file_size=5M 
+20/04/2021 15:01:40  INFO --sort_buffer_size=10M 
+20/04/2021 15:01:40  INFO --bind-address=127.0.0.1 
+20/04/2021 15:01:40  INFO --innodb_thread_concurrency=4 
+20/04/2021 15:01:40  INFO --query_cache_size=1M 
+20/04/2021 15:01:40  INFO --default-storage-engine=MyISAM 
+20/04/2021 15:01:40  INFO --max_connections=70 
+20/04/2021 15:01:40  INFO --innodb_flush_log_at_trx_commit=0 
+20/04/2021 15:01:40  INFO --innodb_log_buffer_size=1M 
+20/04/2021 15:01:40  INFO --innodb_additional_mem_pool_size=2M 
+20/04/2021 15:01:40  INFO --max_allowed_packet=16M 
+20/04/2021 15:01:40  INFO --read_buffer_size=1M 
+20/04/2021 15:01:40  INFO --datadir=./mysql/data 
+20/04/2021 15:01:40  INFO --innodb_buffer_pool_size=64M 
+20/04/2021 15:01:40  INFO --thread_cache_size=5 
+20/04/2021 15:01:40  INFO --default-character-set=latin1 
+20/04/2021 15:01:40  INFO --table_cache=256 
+20/04/2021 15:01:40  INFO --skip-name-resolve 
+20/04/2021 15:01:40  INFO --max_heap_table_size=150MB 
+20/04/2021 15:01:40  INFO --basedir=./mysql 
+20/04/2021 15:01:40  INFO --default-collation=latin1_general_ci 
+20/04/2021 15:01:40  INFO --tmpdir=./mysql/ 
+20/04/2021 15:01:40  INFO --read_rnd_buffer_size=500K 
+20/04/2021 15:01:40  INFO --myisam_max_extra_sort_file_size=100G 
+20/04/2021 15:01:40  INFO --key_buffer_size=100M 
+20/04/2021 15:01:40  INFO --socket=SPEDPisCofins3338 
+20/04/2021 15:01:40  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+20/04/2021 15:01:40  INFO --innodb_file_per_table=1 
+20/04/2021 15:01:40  INFO --innodb_flush_method=normal 
+20/04/2021 15:01:40  INFO 
+
+20/04/2021 15:01:52  INFO ===============================================================
+20/04/2021 15:01:52  INFO Módulo: MODULO_GERAL_PVA
+20/04/2021 15:01:52  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de exclusão da escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+20/04/2021 15:01:52  INFO Serviço: Controle de Geração de Relatórios
+20/04/2021 15:01:52  INFO Serviço: Serviço de exportação de escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de assinatura da escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de cópia de segurança de escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de validação de escrituração
+20/04/2021 15:01:52  INFO Serviço: Serviço de importação de escrituração
+20/04/2021 15:01:52  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+20/04/2021 15:01:52  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+20/04/2021 15:01:52  INFO ===============================================================
+20/04/2021 15:01:52  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+20/04/2021 15:01:52  INFO Serviço: Controle de abertura da Escrituração
+20/04/2021 15:01:52  INFO Serviço: Controle de Edição da Escrituração
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+20/04/2021 15:01:52  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+20/04/2021 15:01:53  INFO Carregando tabelas...
+20/04/2021 12:15:18  INFO ############### Início da Aplicação ###############
+20/04/2021 12:15:18  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+20/04/2021 12:15:19  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+20/04/2021 12:15:20  INFO SwixML @version@
+20/04/2021 15:15:24  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+20/04/2021 15:15:25  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+20/04/2021 15:15:25  INFO --port=3338 
+20/04/2021 15:15:25  INFO --net_write_timeout=604800 
+20/04/2021 15:15:25  INFO --myisam_sort_buffer_size=64M 
+20/04/2021 15:15:25  INFO --lower_case_table_names=1 
+20/04/2021 15:15:25  INFO --tmp_table_size=200M 
+20/04/2021 15:15:25  INFO --language=./mysql/share/english 
+20/04/2021 15:15:25  INFO --myisam_max_sort_file_size=100G 
+20/04/2021 15:15:25  INFO --wait_timeout=604800 
+20/04/2021 15:15:25  INFO --innodb_lock_wait_timeout=50 
+20/04/2021 15:15:25  INFO --net_read_timeout=600 
+20/04/2021 15:15:25  INFO --enable-named-pipe 
+20/04/2021 15:15:25  INFO --innodb_log_file_size=5M 
+20/04/2021 15:15:25  INFO --sort_buffer_size=10M 
+20/04/2021 15:15:25  INFO --bind-address=127.0.0.1 
+20/04/2021 15:15:25  INFO --innodb_thread_concurrency=4 
+20/04/2021 15:15:25  INFO --query_cache_size=1M 
+20/04/2021 15:15:25  INFO --default-storage-engine=MyISAM 
+20/04/2021 15:15:25  INFO --max_connections=70 
+20/04/2021 15:15:25  INFO --innodb_flush_log_at_trx_commit=0 
+20/04/2021 15:15:25  INFO --innodb_log_buffer_size=1M 
+20/04/2021 15:15:25  INFO --innodb_additional_mem_pool_size=2M 
+20/04/2021 15:15:25  INFO --max_allowed_packet=16M 
+20/04/2021 15:15:25  INFO --read_buffer_size=1M 
+20/04/2021 15:15:25  INFO --datadir=./mysql/data 
+20/04/2021 15:15:25  INFO --innodb_buffer_pool_size=64M 
+20/04/2021 15:15:25  INFO --thread_cache_size=5 
+20/04/2021 15:15:25  INFO --default-character-set=latin1 
+20/04/2021 15:15:25  INFO --table_cache=256 
+20/04/2021 15:15:25  INFO --skip-name-resolve 
+20/04/2021 15:15:25  INFO --max_heap_table_size=150MB 
+20/04/2021 15:15:25  INFO --basedir=./mysql 
+20/04/2021 15:15:25  INFO --default-collation=latin1_general_ci 
+20/04/2021 15:15:25  INFO --tmpdir=./mysql/ 
+20/04/2021 15:15:25  INFO --read_rnd_buffer_size=500K 
+20/04/2021 15:15:25  INFO --myisam_max_extra_sort_file_size=100G 
+20/04/2021 15:15:25  INFO --key_buffer_size=100M 
+20/04/2021 15:15:25  INFO --socket=SPEDPisCofins3338 
+20/04/2021 15:15:25  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+20/04/2021 15:15:25  INFO --innodb_file_per_table=1 
+20/04/2021 15:15:25  INFO --innodb_flush_method=normal 
+20/04/2021 15:15:25  INFO 
+
+20/04/2021 15:15:30  INFO ===============================================================
+20/04/2021 15:15:30  INFO Módulo: MODULO_GERAL_PVA
+20/04/2021 15:15:30  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de exportação de escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de importação de escrituração
+20/04/2021 15:15:30  INFO Serviço: Controle de Geração de Relatórios
+20/04/2021 15:15:30  INFO Serviço: Serviço de assinatura da escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de exclusão da escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de cópia de segurança de escrituração
+20/04/2021 15:15:30  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+20/04/2021 15:15:30  INFO Serviço: Serviço de validação de escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+20/04/2021 15:15:30  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+20/04/2021 15:15:30  INFO ===============================================================
+20/04/2021 15:15:30  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+20/04/2021 15:15:30  INFO Serviço: Controle de abertura da Escrituração
+20/04/2021 15:15:30  INFO Serviço: Controle de Edição da Escrituração
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+20/04/2021 15:15:30  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+20/04/2021 15:15:31  INFO Carregando tabelas...
+20/04/2021 13:23:26  INFO ############### Início da Aplicação ###############
+20/04/2021 13:23:26  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+20/04/2021 13:23:26  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+20/04/2021 13:23:27  INFO SwixML @version@
+20/04/2021 16:23:31  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+20/04/2021 16:23:32  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+20/04/2021 16:23:32  INFO --port=3338 
+20/04/2021 16:23:32  INFO --net_write_timeout=604800 
+20/04/2021 16:23:32  INFO --myisam_sort_buffer_size=64M 
+20/04/2021 16:23:32  INFO --lower_case_table_names=1 
+20/04/2021 16:23:32  INFO --tmp_table_size=200M 
+20/04/2021 16:23:32  INFO --language=./mysql/share/english 
+20/04/2021 16:23:32  INFO --myisam_max_sort_file_size=100G 
+20/04/2021 16:23:32  INFO --wait_timeout=604800 
+20/04/2021 16:23:32  INFO --innodb_lock_wait_timeout=50 
+20/04/2021 16:23:32  INFO --net_read_timeout=600 
+20/04/2021 16:23:32  INFO --enable-named-pipe 
+20/04/2021 16:23:32  INFO --innodb_log_file_size=5M 
+20/04/2021 16:23:32  INFO --sort_buffer_size=10M 
+20/04/2021 16:23:32  INFO --bind-address=127.0.0.1 
+20/04/2021 16:23:32  INFO --innodb_thread_concurrency=4 
+20/04/2021 16:23:32  INFO --query_cache_size=1M 
+20/04/2021 16:23:32  INFO --default-storage-engine=MyISAM 
+20/04/2021 16:23:32  INFO --max_connections=70 
+20/04/2021 16:23:32  INFO --innodb_flush_log_at_trx_commit=0 
+20/04/2021 16:23:32  INFO --innodb_log_buffer_size=1M 
+20/04/2021 16:23:32  INFO --innodb_additional_mem_pool_size=2M 
+20/04/2021 16:23:32  INFO --max_allowed_packet=16M 
+20/04/2021 16:23:32  INFO --read_buffer_size=1M 
+20/04/2021 16:23:32  INFO --datadir=./mysql/data 
+20/04/2021 16:23:32  INFO --innodb_buffer_pool_size=64M 
+20/04/2021 16:23:32  INFO --thread_cache_size=5 
+20/04/2021 16:23:32  INFO --default-character-set=latin1 
+20/04/2021 16:23:32  INFO --table_cache=256 
+20/04/2021 16:23:32  INFO --skip-name-resolve 
+20/04/2021 16:23:32  INFO --max_heap_table_size=150MB 
+20/04/2021 16:23:32  INFO --basedir=./mysql 
+20/04/2021 16:23:32  INFO --default-collation=latin1_general_ci 
+20/04/2021 16:23:32  INFO --tmpdir=./mysql/ 
+20/04/2021 16:23:32  INFO --read_rnd_buffer_size=500K 
+20/04/2021 16:23:32  INFO --myisam_max_extra_sort_file_size=100G 
+20/04/2021 16:23:32  INFO --key_buffer_size=100M 
+20/04/2021 16:23:32  INFO --socket=SPEDPisCofins3338 
+20/04/2021 16:23:32  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+20/04/2021 16:23:32  INFO --innodb_file_per_table=1 
+20/04/2021 16:23:32  INFO --innodb_flush_method=normal 
+20/04/2021 16:23:32  INFO 
+
+20/04/2021 16:23:37  INFO ===============================================================
+20/04/2021 16:23:37  INFO Módulo: MODULO_GERAL_PVA
+20/04/2021 16:23:37  INFO Serviço: Serviço de assinatura da escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de validação de escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de cópia de segurança de escrituração
+20/04/2021 16:23:37  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+20/04/2021 16:23:37  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de exportação de escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+20/04/2021 16:23:37  INFO Serviço: Serviço de exclusão da escrituração
+20/04/2021 16:23:37  INFO Serviço: Serviço de importação de escrituração
+20/04/2021 16:23:37  INFO Serviço: Controle de Geração de Relatórios
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+20/04/2021 16:23:37  INFO ===============================================================
+20/04/2021 16:23:37  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+20/04/2021 16:23:37  INFO Serviço: Controle de abertura da Escrituração
+20/04/2021 16:23:37  INFO Serviço: Controle de Edição da Escrituração
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+20/04/2021 16:23:37  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+20/04/2021 16:23:38  INFO Carregando tabelas...
+20/04/2021 15:30:49  INFO ############### Início da Aplicação ###############
+20/04/2021 15:30:49  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+20/04/2021 15:30:49  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+20/04/2021 15:30:49  INFO SwixML @version@
+20/04/2021 18:30:54  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+20/04/2021 18:30:55  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+20/04/2021 18:30:55  INFO --port=3338 
+20/04/2021 18:30:55  INFO --net_write_timeout=604800 
+20/04/2021 18:30:55  INFO --myisam_sort_buffer_size=64M 
+20/04/2021 18:30:55  INFO --lower_case_table_names=1 
+20/04/2021 18:30:55  INFO --tmp_table_size=200M 
+20/04/2021 18:30:55  INFO --language=./mysql/share/english 
+20/04/2021 18:30:55  INFO --myisam_max_sort_file_size=100G 
+20/04/2021 18:30:55  INFO --wait_timeout=604800 
+20/04/2021 18:30:55  INFO --innodb_lock_wait_timeout=50 
+20/04/2021 18:30:55  INFO --net_read_timeout=600 
+20/04/2021 18:30:55  INFO --enable-named-pipe 
+20/04/2021 18:30:55  INFO --innodb_log_file_size=5M 
+20/04/2021 18:30:55  INFO --sort_buffer_size=10M 
+20/04/2021 18:30:55  INFO --bind-address=127.0.0.1 
+20/04/2021 18:30:55  INFO --innodb_thread_concurrency=4 
+20/04/2021 18:30:55  INFO --query_cache_size=1M 
+20/04/2021 18:30:55  INFO --default-storage-engine=MyISAM 
+20/04/2021 18:30:55  INFO --max_connections=70 
+20/04/2021 18:30:55  INFO --innodb_flush_log_at_trx_commit=0 
+20/04/2021 18:30:55  INFO --innodb_log_buffer_size=1M 
+20/04/2021 18:30:55  INFO --innodb_additional_mem_pool_size=2M 
+20/04/2021 18:30:55  INFO --max_allowed_packet=16M 
+20/04/2021 18:30:55  INFO --read_buffer_size=1M 
+20/04/2021 18:30:55  INFO --datadir=./mysql/data 
+20/04/2021 18:30:55  INFO --innodb_buffer_pool_size=64M 
+20/04/2021 18:30:55  INFO --thread_cache_size=5 
+20/04/2021 18:30:55  INFO --default-character-set=latin1 
+20/04/2021 18:30:55  INFO --table_cache=256 
+20/04/2021 18:30:55  INFO --skip-name-resolve 
+20/04/2021 18:30:55  INFO --max_heap_table_size=150MB 
+20/04/2021 18:30:55  INFO --basedir=./mysql 
+20/04/2021 18:30:55  INFO --default-collation=latin1_general_ci 
+20/04/2021 18:30:55  INFO --tmpdir=./mysql/ 
+20/04/2021 18:30:55  INFO --read_rnd_buffer_size=500K 
+20/04/2021 18:30:55  INFO --myisam_max_extra_sort_file_size=100G 
+20/04/2021 18:30:55  INFO --key_buffer_size=100M 
+20/04/2021 18:30:55  INFO --socket=SPEDPisCofins3338 
+20/04/2021 18:30:55  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+20/04/2021 18:30:55  INFO --innodb_file_per_table=1 
+20/04/2021 18:30:55  INFO --innodb_flush_method=normal 
+20/04/2021 18:30:55  INFO 
+
+20/04/2021 18:31:00  INFO ===============================================================
+20/04/2021 18:31:00  INFO Módulo: MODULO_GERAL_PVA
+20/04/2021 18:31:00  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de exclusão da escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de importação de escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de validação de escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de assinatura da escrituração
+20/04/2021 18:31:00  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+20/04/2021 18:31:00  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de cópia de segurança de escrituração
+20/04/2021 18:31:00  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+20/04/2021 18:31:00  INFO Serviço: Controle de Geração de Relatórios
+20/04/2021 18:31:00  INFO Serviço: Serviço de exportação de escrituração
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO ===============================================================
+20/04/2021 18:31:00  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+20/04/2021 18:31:00  INFO Serviço: Controle de abertura da Escrituração
+20/04/2021 18:31:00  INFO Serviço: Controle de Edição da Escrituração
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+20/04/2021 18:31:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+20/04/2021 18:31:01  INFO Carregando tabelas...
+20/04/2021 16:14:52  INFO ############### Início da Aplicação ###############
+20/04/2021 16:14:52  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+20/04/2021 16:14:53  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+20/04/2021 16:14:53  INFO SwixML @version@
+20/04/2021 19:14:57  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+20/04/2021 19:15:03  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+20/04/2021 19:15:03  INFO --port=3338 
+20/04/2021 19:15:03  INFO --net_write_timeout=604800 
+20/04/2021 19:15:03  INFO --myisam_sort_buffer_size=64M 
+20/04/2021 19:15:03  INFO --lower_case_table_names=1 
+20/04/2021 19:15:03  INFO --tmp_table_size=200M 
+20/04/2021 19:15:03  INFO --language=./mysql/share/english 
+20/04/2021 19:15:03  INFO --myisam_max_sort_file_size=100G 
+20/04/2021 19:15:03  INFO --wait_timeout=604800 
+20/04/2021 19:15:03  INFO --innodb_lock_wait_timeout=50 
+20/04/2021 19:15:03  INFO --net_read_timeout=600 
+20/04/2021 19:15:03  INFO --enable-named-pipe 
+20/04/2021 19:15:03  INFO --innodb_log_file_size=5M 
+20/04/2021 19:15:03  INFO --sort_buffer_size=10M 
+20/04/2021 19:15:03  INFO --bind-address=127.0.0.1 
+20/04/2021 19:15:03  INFO --innodb_thread_concurrency=4 
+20/04/2021 19:15:03  INFO --query_cache_size=1M 
+20/04/2021 19:15:03  INFO --default-storage-engine=MyISAM 
+20/04/2021 19:15:03  INFO --max_connections=70 
+20/04/2021 19:15:03  INFO --innodb_flush_log_at_trx_commit=0 
+20/04/2021 19:15:03  INFO --innodb_log_buffer_size=1M 
+20/04/2021 19:15:03  INFO --innodb_additional_mem_pool_size=2M 
+20/04/2021 19:15:03  INFO --max_allowed_packet=16M 
+20/04/2021 19:15:03  INFO --read_buffer_size=1M 
+20/04/2021 19:15:03  INFO --datadir=./mysql/data 
+20/04/2021 19:15:03  INFO --innodb_buffer_pool_size=64M 
+20/04/2021 19:15:03  INFO --thread_cache_size=5 
+20/04/2021 19:15:03  INFO --default-character-set=latin1 
+20/04/2021 19:15:03  INFO --table_cache=256 
+20/04/2021 19:15:03  INFO --skip-name-resolve 
+20/04/2021 19:15:03  INFO --max_heap_table_size=150MB 
+20/04/2021 19:15:03  INFO --basedir=./mysql 
+20/04/2021 19:15:03  INFO --default-collation=latin1_general_ci 
+20/04/2021 19:15:03  INFO --tmpdir=./mysql/ 
+20/04/2021 19:15:03  INFO --read_rnd_buffer_size=500K 
+20/04/2021 19:15:03  INFO --myisam_max_extra_sort_file_size=100G 
+20/04/2021 19:15:03  INFO --key_buffer_size=100M 
+20/04/2021 19:15:03  INFO --socket=SPEDPisCofins3338 
+20/04/2021 19:15:03  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+20/04/2021 19:15:03  INFO --innodb_file_per_table=1 
+20/04/2021 19:15:03  INFO --innodb_flush_method=normal 
+20/04/2021 19:15:03  INFO 
+
+20/04/2021 19:15:07  INFO ===============================================================
+20/04/2021 19:15:07  INFO Módulo: MODULO_GERAL_PVA
+20/04/2021 19:15:07  INFO Serviço: Serviço de exportação de escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de exclusão da escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de importação de escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+20/04/2021 19:15:07  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de validação de escrituração
+20/04/2021 19:15:07  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+20/04/2021 19:15:07  INFO Serviço: Serviço de assinatura da escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+20/04/2021 19:15:07  INFO Serviço: Serviço de cópia de segurança de escrituração
+20/04/2021 19:15:07  INFO Serviço: Controle de Geração de Relatórios
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+20/04/2021 19:15:07  INFO ===============================================================
+20/04/2021 19:15:07  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+20/04/2021 19:15:07  INFO Serviço: Controle de abertura da Escrituração
+20/04/2021 19:15:07  INFO Serviço: Controle de Edição da Escrituração
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+20/04/2021 19:15:07  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+20/04/2021 19:15:08  INFO Carregando tabelas...
+20/04/2021 16:25:46  INFO ############### Início da Aplicação ###############
+20/04/2021 16:25:46  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+20/04/2021 16:25:46  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+20/04/2021 16:25:46  INFO SwixML @version@
+20/04/2021 19:25:51  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+20/04/2021 19:25:52  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+20/04/2021 19:25:52  INFO --port=3338 
+20/04/2021 19:25:52  INFO --net_write_timeout=604800 
+20/04/2021 19:25:52  INFO --myisam_sort_buffer_size=64M 
+20/04/2021 19:25:52  INFO --lower_case_table_names=1 
+20/04/2021 19:25:52  INFO --tmp_table_size=200M 
+20/04/2021 19:25:52  INFO --language=./mysql/share/english 
+20/04/2021 19:25:52  INFO --myisam_max_sort_file_size=100G 
+20/04/2021 19:25:52  INFO --wait_timeout=604800 
+20/04/2021 19:25:52  INFO --innodb_lock_wait_timeout=50 
+20/04/2021 19:25:52  INFO --net_read_timeout=600 
+20/04/2021 19:25:52  INFO --enable-named-pipe 
+20/04/2021 19:25:52  INFO --innodb_log_file_size=5M 
+20/04/2021 19:25:52  INFO --sort_buffer_size=10M 
+20/04/2021 19:25:52  INFO --bind-address=127.0.0.1 
+20/04/2021 19:25:52  INFO --innodb_thread_concurrency=4 
+20/04/2021 19:25:52  INFO --query_cache_size=1M 
+20/04/2021 19:25:52  INFO --default-storage-engine=MyISAM 
+20/04/2021 19:25:52  INFO --max_connections=70 
+20/04/2021 19:25:52  INFO --innodb_flush_log_at_trx_commit=0 
+20/04/2021 19:25:52  INFO --innodb_log_buffer_size=1M 
+20/04/2021 19:25:52  INFO --innodb_additional_mem_pool_size=2M 
+20/04/2021 19:25:52  INFO --max_allowed_packet=16M 
+20/04/2021 19:25:52  INFO --read_buffer_size=1M 
+20/04/2021 19:25:52  INFO --datadir=./mysql/data 
+20/04/2021 19:25:52  INFO --innodb_buffer_pool_size=64M 
+20/04/2021 19:25:52  INFO --thread_cache_size=5 
+20/04/2021 19:25:52  INFO --default-character-set=latin1 
+20/04/2021 19:25:52  INFO --table_cache=256 
+20/04/2021 19:25:52  INFO --skip-name-resolve 
+20/04/2021 19:25:52  INFO --max_heap_table_size=150MB 
+20/04/2021 19:25:52  INFO --basedir=./mysql 
+20/04/2021 19:25:52  INFO --default-collation=latin1_general_ci 
+20/04/2021 19:25:52  INFO --tmpdir=./mysql/ 
+20/04/2021 19:25:52  INFO --read_rnd_buffer_size=500K 
+20/04/2021 19:25:52  INFO --myisam_max_extra_sort_file_size=100G 
+20/04/2021 19:25:52  INFO --key_buffer_size=100M 
+20/04/2021 19:25:52  INFO --socket=SPEDPisCofins3338 
+20/04/2021 19:25:52  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+20/04/2021 19:25:52  INFO --innodb_file_per_table=1 
+20/04/2021 19:25:52  INFO --innodb_flush_method=normal 
+20/04/2021 19:25:52  INFO 
+
+20/04/2021 19:25:57  INFO ===============================================================
+20/04/2021 19:25:57  INFO Módulo: MODULO_GERAL_PVA
+20/04/2021 19:25:57  INFO Serviço: Serviço de exclusão da escrituração
+20/04/2021 19:25:57  INFO Serviço: Controle de Geração de Relatórios
+20/04/2021 19:25:57  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+20/04/2021 19:25:57  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+20/04/2021 19:25:57  INFO Serviço: Serviço de validação de escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de assinatura da escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de importação de escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de cópia de segurança de escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de exportação de escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+20/04/2021 19:25:57  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+20/04/2021 19:25:57  INFO ===============================================================
+20/04/2021 19:25:57  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+20/04/2021 19:25:57  INFO Serviço: Controle de abertura da Escrituração
+20/04/2021 19:25:57  INFO Serviço: Controle de Edição da Escrituração
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+20/04/2021 19:25:57  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+20/04/2021 19:25:58  INFO Carregando tabelas...
+22/04/2021 07:42:19  INFO ############### Início da Aplicação ###############
+22/04/2021 07:42:19  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+22/04/2021 07:42:22  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+22/04/2021 07:42:22  INFO SwixML @version@
+22/04/2021 10:42:27  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+22/04/2021 10:42:28  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+22/04/2021 10:42:28  INFO --port=3338 
+22/04/2021 10:42:28  INFO --net_write_timeout=604800 
+22/04/2021 10:42:28  INFO --myisam_sort_buffer_size=64M 
+22/04/2021 10:42:28  INFO --lower_case_table_names=1 
+22/04/2021 10:42:28  INFO --tmp_table_size=200M 
+22/04/2021 10:42:28  INFO --language=./mysql/share/english 
+22/04/2021 10:42:28  INFO --myisam_max_sort_file_size=100G 
+22/04/2021 10:42:28  INFO --wait_timeout=604800 
+22/04/2021 10:42:28  INFO --innodb_lock_wait_timeout=50 
+22/04/2021 10:42:28  INFO --net_read_timeout=600 
+22/04/2021 10:42:28  INFO --enable-named-pipe 
+22/04/2021 10:42:28  INFO --innodb_log_file_size=5M 
+22/04/2021 10:42:28  INFO --sort_buffer_size=10M 
+22/04/2021 10:42:28  INFO --bind-address=127.0.0.1 
+22/04/2021 10:42:28  INFO --innodb_thread_concurrency=4 
+22/04/2021 10:42:28  INFO --query_cache_size=1M 
+22/04/2021 10:42:28  INFO --default-storage-engine=MyISAM 
+22/04/2021 10:42:28  INFO --max_connections=70 
+22/04/2021 10:42:28  INFO --innodb_flush_log_at_trx_commit=0 
+22/04/2021 10:42:28  INFO --innodb_log_buffer_size=1M 
+22/04/2021 10:42:28  INFO --innodb_additional_mem_pool_size=2M 
+22/04/2021 10:42:28  INFO --max_allowed_packet=16M 
+22/04/2021 10:42:28  INFO --read_buffer_size=1M 
+22/04/2021 10:42:28  INFO --datadir=./mysql/data 
+22/04/2021 10:42:28  INFO --innodb_buffer_pool_size=64M 
+22/04/2021 10:42:28  INFO --thread_cache_size=5 
+22/04/2021 10:42:28  INFO --default-character-set=latin1 
+22/04/2021 10:42:28  INFO --table_cache=256 
+22/04/2021 10:42:28  INFO --skip-name-resolve 
+22/04/2021 10:42:28  INFO --max_heap_table_size=150MB 
+22/04/2021 10:42:28  INFO --basedir=./mysql 
+22/04/2021 10:42:28  INFO --default-collation=latin1_general_ci 
+22/04/2021 10:42:28  INFO --tmpdir=./mysql/ 
+22/04/2021 10:42:28  INFO --read_rnd_buffer_size=500K 
+22/04/2021 10:42:28  INFO --myisam_max_extra_sort_file_size=100G 
+22/04/2021 10:42:28  INFO --key_buffer_size=100M 
+22/04/2021 10:42:28  INFO --socket=SPEDPisCofins3338 
+22/04/2021 10:42:28  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+22/04/2021 10:42:28  INFO --innodb_file_per_table=1 
+22/04/2021 10:42:28  INFO --innodb_flush_method=normal 
+22/04/2021 10:42:28  INFO 
+
+22/04/2021 10:42:40  INFO ===============================================================
+22/04/2021 10:42:40  INFO Módulo: MODULO_GERAL_PVA
+22/04/2021 10:42:40  INFO Serviço: Serviço de assinatura da escrituração
+22/04/2021 10:42:40  INFO Serviço: Serviço de exportação de escrituração
+22/04/2021 10:42:40  INFO Serviço: Controle de Geração de Relatórios
+22/04/2021 10:42:40  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+22/04/2021 10:42:40  INFO Serviço: Serviço de validação de escrituração
+22/04/2021 10:42:40  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+22/04/2021 10:42:40  INFO Serviço: Serviço de importação de escrituração
+22/04/2021 10:42:40  INFO Serviço: Serviço de exclusão da escrituração
+22/04/2021 10:42:40  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+22/04/2021 10:42:40  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+22/04/2021 10:42:40  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+22/04/2021 10:42:40  INFO Serviço: Serviço de cópia de segurança de escrituração
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO ===============================================================
+22/04/2021 10:42:40  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+22/04/2021 10:42:40  INFO Serviço: Controle de abertura da Escrituração
+22/04/2021 10:42:40  INFO Serviço: Controle de Edição da Escrituração
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+22/04/2021 10:42:40  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+22/04/2021 10:42:41  INFO Carregando tabelas...
+29/04/2021 10:46:38  INFO ############### Início da Aplicação ###############
+29/04/2021 10:46:38  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+29/04/2021 10:46:41  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+29/04/2021 10:46:41  INFO SwixML @version@
+29/04/2021 13:46:46  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+29/04/2021 13:46:47  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+29/04/2021 13:46:47  INFO --port=3338 
+29/04/2021 13:46:47  INFO --net_write_timeout=604800 
+29/04/2021 13:46:47  INFO --myisam_sort_buffer_size=64M 
+29/04/2021 13:46:47  INFO --lower_case_table_names=1 
+29/04/2021 13:46:47  INFO --tmp_table_size=200M 
+29/04/2021 13:46:47  INFO --language=./mysql/share/english 
+29/04/2021 13:46:47  INFO --myisam_max_sort_file_size=100G 
+29/04/2021 13:46:47  INFO --wait_timeout=604800 
+29/04/2021 13:46:47  INFO --innodb_lock_wait_timeout=50 
+29/04/2021 13:46:47  INFO --net_read_timeout=600 
+29/04/2021 13:46:47  INFO --enable-named-pipe 
+29/04/2021 13:46:47  INFO --innodb_log_file_size=5M 
+29/04/2021 13:46:47  INFO --sort_buffer_size=10M 
+29/04/2021 13:46:47  INFO --bind-address=127.0.0.1 
+29/04/2021 13:46:47  INFO --innodb_thread_concurrency=4 
+29/04/2021 13:46:47  INFO --query_cache_size=1M 
+29/04/2021 13:46:47  INFO --default-storage-engine=MyISAM 
+29/04/2021 13:46:47  INFO --max_connections=70 
+29/04/2021 13:46:47  INFO --innodb_flush_log_at_trx_commit=0 
+29/04/2021 13:46:47  INFO --innodb_log_buffer_size=1M 
+29/04/2021 13:46:47  INFO --innodb_additional_mem_pool_size=2M 
+29/04/2021 13:46:47  INFO --max_allowed_packet=16M 
+29/04/2021 13:46:47  INFO --read_buffer_size=1M 
+29/04/2021 13:46:47  INFO --datadir=./mysql/data 
+29/04/2021 13:46:47  INFO --innodb_buffer_pool_size=64M 
+29/04/2021 13:46:47  INFO --thread_cache_size=5 
+29/04/2021 13:46:47  INFO --default-character-set=latin1 
+29/04/2021 13:46:47  INFO --table_cache=256 
+29/04/2021 13:46:47  INFO --skip-name-resolve 
+29/04/2021 13:46:47  INFO --max_heap_table_size=150MB 
+29/04/2021 13:46:47  INFO --basedir=./mysql 
+29/04/2021 13:46:47  INFO --default-collation=latin1_general_ci 
+29/04/2021 13:46:47  INFO --tmpdir=./mysql/ 
+29/04/2021 13:46:47  INFO --read_rnd_buffer_size=500K 
+29/04/2021 13:46:47  INFO --myisam_max_extra_sort_file_size=100G 
+29/04/2021 13:46:47  INFO --key_buffer_size=100M 
+29/04/2021 13:46:47  INFO --socket=SPEDPisCofins3338 
+29/04/2021 13:46:47  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+29/04/2021 13:46:47  INFO --innodb_file_per_table=1 
+29/04/2021 13:46:47  INFO --innodb_flush_method=normal 
+29/04/2021 13:46:47  INFO 
+
+29/04/2021 13:47:00  INFO ===============================================================
+29/04/2021 13:47:00  INFO Módulo: MODULO_GERAL_PVA
+29/04/2021 13:47:00  INFO Serviço: Serviço de exportação de escrituração
+29/04/2021 13:47:00  INFO Serviço: Serviço de cópia de segurança de escrituração
+29/04/2021 13:47:00  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+29/04/2021 13:47:00  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+29/04/2021 13:47:00  INFO Serviço: Serviço de assinatura da escrituração
+29/04/2021 13:47:00  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+29/04/2021 13:47:00  INFO Serviço: Serviço de validação de escrituração
+29/04/2021 13:47:00  INFO Serviço: Serviço de importação de escrituração
+29/04/2021 13:47:00  INFO Serviço: Controle de Geração de Relatórios
+29/04/2021 13:47:00  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+29/04/2021 13:47:00  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+29/04/2021 13:47:00  INFO Serviço: Serviço de exclusão da escrituração
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO ===============================================================
+29/04/2021 13:47:00  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+29/04/2021 13:47:00  INFO Serviço: Controle de abertura da Escrituração
+29/04/2021 13:47:00  INFO Serviço: Controle de Edição da Escrituração
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+29/04/2021 13:47:00  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+29/04/2021 13:47:01  INFO Carregando tabelas...
+29/04/2021 11:16:24  INFO ############### Início da Aplicação ###############
+29/04/2021 11:16:24  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+29/04/2021 11:16:25  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+29/04/2021 11:16:25  INFO SwixML @version@
+29/04/2021 14:16:29  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+29/04/2021 14:16:34  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+29/04/2021 14:16:34  INFO --port=3338 
+29/04/2021 14:16:34  INFO --net_write_timeout=604800 
+29/04/2021 14:16:34  INFO --myisam_sort_buffer_size=64M 
+29/04/2021 14:16:34  INFO --lower_case_table_names=1 
+29/04/2021 14:16:34  INFO --tmp_table_size=200M 
+29/04/2021 14:16:34  INFO --language=./mysql/share/english 
+29/04/2021 14:16:34  INFO --myisam_max_sort_file_size=100G 
+29/04/2021 14:16:34  INFO --wait_timeout=604800 
+29/04/2021 14:16:34  INFO --innodb_lock_wait_timeout=50 
+29/04/2021 14:16:34  INFO --net_read_timeout=600 
+29/04/2021 14:16:34  INFO --enable-named-pipe 
+29/04/2021 14:16:34  INFO --innodb_log_file_size=5M 
+29/04/2021 14:16:34  INFO --sort_buffer_size=10M 
+29/04/2021 14:16:34  INFO --bind-address=127.0.0.1 
+29/04/2021 14:16:34  INFO --innodb_thread_concurrency=4 
+29/04/2021 14:16:34  INFO --query_cache_size=1M 
+29/04/2021 14:16:34  INFO --default-storage-engine=MyISAM 
+29/04/2021 14:16:34  INFO --max_connections=70 
+29/04/2021 14:16:34  INFO --innodb_flush_log_at_trx_commit=0 
+29/04/2021 14:16:34  INFO --innodb_log_buffer_size=1M 
+29/04/2021 14:16:34  INFO --innodb_additional_mem_pool_size=2M 
+29/04/2021 14:16:34  INFO --max_allowed_packet=16M 
+29/04/2021 14:16:34  INFO --read_buffer_size=1M 
+29/04/2021 14:16:34  INFO --datadir=./mysql/data 
+29/04/2021 14:16:34  INFO --innodb_buffer_pool_size=64M 
+29/04/2021 14:16:34  INFO --thread_cache_size=5 
+29/04/2021 14:16:34  INFO --default-character-set=latin1 
+29/04/2021 14:16:34  INFO --table_cache=256 
+29/04/2021 14:16:34  INFO --skip-name-resolve 
+29/04/2021 14:16:34  INFO --max_heap_table_size=150MB 
+29/04/2021 14:16:34  INFO --basedir=./mysql 
+29/04/2021 14:16:34  INFO --default-collation=latin1_general_ci 
+29/04/2021 14:16:34  INFO --tmpdir=./mysql/ 
+29/04/2021 14:16:34  INFO --read_rnd_buffer_size=500K 
+29/04/2021 14:16:34  INFO --myisam_max_extra_sort_file_size=100G 
+29/04/2021 14:16:34  INFO --key_buffer_size=100M 
+29/04/2021 14:16:34  INFO --socket=SPEDPisCofins3338 
+29/04/2021 14:16:34  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+29/04/2021 14:16:34  INFO --innodb_file_per_table=1 
+29/04/2021 14:16:34  INFO --innodb_flush_method=normal 
+29/04/2021 14:16:34  INFO 
+
+29/04/2021 14:16:39  INFO ===============================================================
+29/04/2021 14:16:39  INFO Módulo: MODULO_GERAL_PVA
+29/04/2021 14:16:39  INFO Serviço: Controle de Geração de Relatórios
+29/04/2021 14:16:39  INFO Serviço: Serviço de assinatura da escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de exclusão da escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+29/04/2021 14:16:39  INFO Serviço: Serviço de importação de escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de exportação de escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de validação de escrituração
+29/04/2021 14:16:39  INFO Serviço: Serviço de cópia de segurança de escrituração
+29/04/2021 14:16:39  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO ===============================================================
+29/04/2021 14:16:39  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+29/04/2021 14:16:39  INFO Serviço: Controle de abertura da Escrituração
+29/04/2021 14:16:39  INFO Serviço: Controle de Edição da Escrituração
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+29/04/2021 14:16:39  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+29/04/2021 14:16:40  INFO Carregando tabelas...
+12/06/2021 19:43:29  INFO ############### Início da Aplicação ###############
+12/06/2021 19:43:29  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+12/06/2021 19:43:30  INFO fontdefault: java.awt.Font[family=Arial,name=Arial,style=plain,size=11]
+12/06/2021 19:43:30  INFO SwixML @version@
+12/06/2021 22:43:35  INFO [--net_write_timeout=604800, --myisam_sort_buffer_size=64M, --lower_case_table_names=1, --tmp_table_size=200M, --language=./mysql/share/english, --myisam_max_sort_file_size=100G, --wait_timeout=604800, --innodb_lock_wait_timeout=50, --net_read_timeout=600, --enable-named-pipe, --innodb_log_file_size=5M, --sort_buffer_size=10M, --bind-address=127.0.0.1, --innodb_thread_concurrency=4, --query_cache_size=1M, --default-storage-engine=MyISAM, --max_connections=70, --innodb_flush_log_at_trx_commit=0, --innodb_log_buffer_size=1M, --innodb_additional_mem_pool_size=2M, --max_allowed_packet=16M, --read_buffer_size=1M, --datadir=./mysql/data, --innodb_buffer_pool_size=64M, --thread_cache_size=5, --default-character-set=latin1, --table_cache=256, --skip-name-resolve, --max_heap_table_size=150MB, --basedir=./mysql, --default-collation=latin1_general_ci, --tmpdir=./mysql/, --read_rnd_buffer_size=500K, --myisam_max_extra_sort_file_size=100G, --key_buffer_size=100M, --socket=SPEDPisCofins3338, --innodb_data_file_path=ibdata1:10M:autoextend, --innodb_file_per_table=1, --innodb_flush_method=normal]
+12/06/2021 22:43:36  INFO C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes/mysql//bin/mysqld-nt.exe 
+12/06/2021 22:43:36  INFO --port=3338 
+12/06/2021 22:43:36  INFO --net_write_timeout=604800 
+12/06/2021 22:43:36  INFO --myisam_sort_buffer_size=64M 
+12/06/2021 22:43:36  INFO --lower_case_table_names=1 
+12/06/2021 22:43:36  INFO --tmp_table_size=200M 
+12/06/2021 22:43:36  INFO --language=./mysql/share/english 
+12/06/2021 22:43:36  INFO --myisam_max_sort_file_size=100G 
+12/06/2021 22:43:36  INFO --wait_timeout=604800 
+12/06/2021 22:43:36  INFO --innodb_lock_wait_timeout=50 
+12/06/2021 22:43:36  INFO --net_read_timeout=600 
+12/06/2021 22:43:36  INFO --enable-named-pipe 
+12/06/2021 22:43:36  INFO --innodb_log_file_size=5M 
+12/06/2021 22:43:36  INFO --sort_buffer_size=10M 
+12/06/2021 22:43:36  INFO --bind-address=127.0.0.1 
+12/06/2021 22:43:36  INFO --innodb_thread_concurrency=4 
+12/06/2021 22:43:36  INFO --query_cache_size=1M 
+12/06/2021 22:43:36  INFO --default-storage-engine=MyISAM 
+12/06/2021 22:43:36  INFO --max_connections=70 
+12/06/2021 22:43:36  INFO --innodb_flush_log_at_trx_commit=0 
+12/06/2021 22:43:36  INFO --innodb_log_buffer_size=1M 
+12/06/2021 22:43:36  INFO --innodb_additional_mem_pool_size=2M 
+12/06/2021 22:43:36  INFO --max_allowed_packet=16M 
+12/06/2021 22:43:36  INFO --read_buffer_size=1M 
+12/06/2021 22:43:36  INFO --datadir=./mysql/data 
+12/06/2021 22:43:36  INFO --innodb_buffer_pool_size=64M 
+12/06/2021 22:43:36  INFO --thread_cache_size=5 
+12/06/2021 22:43:36  INFO --default-character-set=latin1 
+12/06/2021 22:43:36  INFO --table_cache=256 
+12/06/2021 22:43:36  INFO --skip-name-resolve 
+12/06/2021 22:43:36  INFO --max_heap_table_size=150MB 
+12/06/2021 22:43:36  INFO --basedir=./mysql 
+12/06/2021 22:43:36  INFO --default-collation=latin1_general_ci 
+12/06/2021 22:43:36  INFO --tmpdir=./mysql/ 
+12/06/2021 22:43:36  INFO --read_rnd_buffer_size=500K 
+12/06/2021 22:43:36  INFO --myisam_max_extra_sort_file_size=100G 
+12/06/2021 22:43:36  INFO --key_buffer_size=100M 
+12/06/2021 22:43:36  INFO --socket=SPEDPisCofins3338 
+12/06/2021 22:43:36  INFO --innodb_data_file_path=ibdata1:10M:autoextend 
+12/06/2021 22:43:36  INFO --innodb_file_per_table=1 
+12/06/2021 22:43:36  INFO --innodb_flush_method=normal 
+12/06/2021 22:43:36  INFO 
+
+12/06/2021 22:43:51  INFO ===============================================================
+12/06/2021 22:43:51  INFO Módulo: MODULO_GERAL_PVA
+12/06/2021 22:43:51  INFO Serviço: Serviço de Atualização das tabelas da escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de importação de escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de exclusão da escrituração
+12/06/2021 22:43:51  INFO Serviço: Controle de Geração de Relatórios
+12/06/2021 22:43:51  INFO Serviço: Transmissão de escrituração ou lista de escriturações
+12/06/2021 22:43:51  INFO Serviço: Serviço de assinatura da escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de exclusão da assinatura do arquivo de escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de consulta da situacão de uma escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de cópia de segurança de escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de validação de escrituração
+12/06/2021 22:43:51  INFO Serviço: Serviço de visualizaçao dos dados da assinatura
+12/06/2021 22:43:51  INFO Serviço: Serviço de exportação de escrituração
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.atualizartabela.IControleAtualizarTabela - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.importar.IControleImportarEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.excluir.IControleExcluirEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.relatorios.controle.IControleGerarRelatorio - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.transmitir.IControleTransmitirEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.assinar.IControleAssinarEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.excluir.IControleExcluirAssinatura - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.consultarsituacao.IControleConsultarSituacao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.copiaseguranca.escrituracao.IControleCopiaSegurancaEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.validar.IControleValidarEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.assinatura.visualizar.IControleVisualizarAssinatura - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.nucleo.controle.escrituracao.exportar.IControleExportarEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO ===============================================================
+12/06/2021 22:43:51  INFO Módulo: MODULO_LEIAUTE_ESCRITURACAO
+12/06/2021 22:43:51  INFO Serviço: Controle de abertura da Escrituração
+12/06/2021 22:43:51  INFO Serviço: Controle de Edição da Escrituração
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.fronteira.escrituracao.abrir.IControleAbrirEscrituracao - Versão: 1
+12/06/2021 22:43:51  INFO Serviço: br.gov.serpro.sped.piscofinspva.edicao.escrituracao.controle.IControleEditarEscrituracao - Versão: 1
+12/06/2021 22:43:53  INFO Carregando tabelas...

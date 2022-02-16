@@ -1,0 +1,24 @@
+12/06/2021 20:34:10  INFO ############### Início da Aplicação ###############
+12/06/2021 20:34:10  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+12/06/2021 20:35:57  INFO ############### Início da Aplicação ###############
+12/06/2021 20:35:57  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
+08/07/2021 18:52:50  INFO ############### Início da Aplicação ###############
+08/07/2021 18:52:50  INFO 
+--------------------------------------------------------------------------------------
+Java Runtime Environment version 1.8.0_201
+Java vendor: Oracle Corporation
+Java vendor URL : http://java.oracle.com/
+Java home : C:\Arquivos de Programas RFB\Programas SPED\EFDContribuicoes\jre
+--------------------------------------------------------------------------------------
